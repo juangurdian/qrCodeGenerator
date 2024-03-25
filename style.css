@@ -1,0 +1,93 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('img.webp');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: wheat;
+}
+.container{
+    background-color: rgba(230, 230, 230, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    height: 220px;
+    transition: height 0.6s ease;
+}
+.container.animate{
+    height: 510px;
+}
+.container header h1{
+    font-size: 19px;
+    font-weight: 500;
+}
+.container header .line{
+    font-size: 15px;
+    margin: 4px;
+}
+.main{
+    text-align: center;
+}
+.container .qr-bar{
+    margin-top: 35px;
+    display: flex;
+    margin-bottom: 15px;
+    padding: 33px 0;
+    border-radius: 5px;
+    background-color: rgba(12, 12, 12, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    text-align: center;
+    justify-content: center;
+}
+.container .qr-bar img{
+    height: 170px;
+    width: 170px;
+    border-radius: 3px;
+    border: 2px solid whitesmoke;
+}
+.container.animate .qr-bar{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.5s ease;
+}
+.container .form{
+    margin-top: 20px;
+}
+.container .form input{
+     height: 30px;
+     font-size: 12px;
+     width: 300px;
+     padding: 20px;
+     outline: none;
+     border-radius: 2px;
+     background-color: rgba(228, 228, 228, 0.1);
+     color: white;
+     border: 1px solid grey;
+}
+.container .form button{
+     /* height: 30px; */
+     width: 300px;
+     padding: 11px;
+     border-radius: 2px;
+     background-color: rgba(228, 228, 228, 0.1);
+     color: white;
+     border: 1px solid grey;
+     cursor: pointer;
+     margin-top: 20px;
+     transition-property: background-color;
+     transition-duration: 0.5s;
+}
+.container .form button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
